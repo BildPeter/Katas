@@ -7,7 +7,7 @@
 kata::Grid::Grid( int sizeX, int sizeY )
 {
     grid_.resize( sizeX );
-    for ( auto &&elemX : grid_ )
+    for ( auto &elemX : grid_ )
     {
         elemX.resize( sizeY );
     }

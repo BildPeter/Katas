@@ -14,7 +14,6 @@ class Grid
 public:
     Grid( int sizeX, int sizeY );
 
-private:
     std::vector< std::vector< bool > >      grid_;
 };
 }

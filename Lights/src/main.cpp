@@ -8,7 +8,10 @@
 class ofApp : public ofBaseApp{
 public:
 	void setup()
-	{}
+	{
+		ofLogNotice() << "X: " << lightGrid.grid_.size();
+		ofLogNotice() << "Y: " << lightGrid.grid_.at(0).size();
+	}
 
 	void update()
 	{
@@ -17,7 +20,10 @@ public:
 
 	void draw()
 	{
-		
+//		for ( auto &&item : lightGrid.grid_ )
+//		{
+//
+//		}
 		
 	}
 
