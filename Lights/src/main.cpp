@@ -11,6 +11,8 @@ public:
 	{
 		ofLogNotice() << "X: " << lightGrid.grid_.size();
 		ofLogNotice() << "Y: " << lightGrid.grid_.at(0).size();
+
+		lightGrid.turnOn( 100, 100 );
 	}
 
 	void update()
@@ -20,10 +22,20 @@ public:
 
 	void draw()
 	{
-//		for ( auto &&item : lightGrid.grid_ )
-//		{
-//
-//		}
+		ofBackground( ofColor::black );
+		ofSetColor( ofColor::lightYellow );
+
+		//TODO better iteration
+		for ( int i = 0; i < SIZE_X; ++i )
+		{
+			for ( int j = 0; j < SIZE_Y; ++j )
+			{
+				if ( lightGrid.isOn( i, j ) )
+				{
+					ofDrawRectangle( ofPoint(i,j), 1, 1 );
+				}
+			}
+		}
 		
 	}
 

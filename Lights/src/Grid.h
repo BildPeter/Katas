@@ -16,7 +16,8 @@ public:
 
     std::vector< std::vector< bool > >      grid_;
 
-    bool getValue( int x, int y );
+    bool isOn( int x, int y );
+    void turnOn( int x, int y );
 
 private:
     int sizeX_, sizeY_;

@@ -16,10 +16,20 @@ kata::Grid::Grid( int sizeX, int sizeY )
     }
 }
 
-bool kata::Grid::getValue( int x, int y )
+bool kata::Grid::isOn( int x, int y )
 {
     if ( ( x < sizeX_ ) && ( y < sizeY_) )
     {
         return grid_.at(x).at(y);
     }
 }
+
+void kata::Grid::turnOn( int x, int y )
+{
+    if ( ( x < sizeX_ ) && ( y < sizeY_) )
+    {
+        grid_.at(x).at(y) = true;
+    }
+}
+
+
