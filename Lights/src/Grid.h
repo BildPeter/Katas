@@ -15,6 +15,11 @@ public:
     Grid( int sizeX, int sizeY );
 
     std::vector< std::vector< bool > >      grid_;
+
+    bool getValue( int x, int y );
+
+private:
+    int sizeX_, sizeY_;
 };
 }
 
