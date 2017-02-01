@@ -14,8 +14,3 @@ void ofApp::update(){
 void ofApp::draw(){
 
 }
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}

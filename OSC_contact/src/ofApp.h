@@ -8,5 +8,4 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
-		void gotMessage(ofMessage msg);
 };
