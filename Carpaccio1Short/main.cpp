@@ -44,7 +44,7 @@ public:
 	double getFinalPrice( string countryCode )
 	{
 		double priceBeforeReduction = priceSingle * amountProduct * getTaxFactor( countryCode );
-		double reductionFactor = 1.0;
+		double reductionFactor = 1.0 - getReductionPercentage( amountProduct ) / 100;
 
 		return priceBeforeReduction * reductionFactor;
 	}
@@ -53,7 +53,7 @@ public:
 	void setup()
 	{
         gui.setup( "Shop", "guiSettings.xml", 200, 50 );
-		gui.add( amountProduct.setup( "Amount", 1, 0, 70000 ) );
+		gui.add( amountProduct.setup( "Amount", 1, 0, 100000 ) );
 		priceSingle = 10.0;
 		country = "GB";
 	}
