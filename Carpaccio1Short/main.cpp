@@ -8,8 +8,7 @@ class ofApp : public ofBaseApp{
 public:
     ofxIntSlider amountProduct;
     ofxPanel gui;
-
-//	int amountProduct = 0;
+	
 	double priceSingle = 0;
 	double priceFinal = 0.0;
 	double taxPercentageCurrent = 15;
@@ -28,7 +27,6 @@ public:
 	{
         gui.setup( "Shop", "guiSettings.xml", 200, 50 );
 		gui.add( amountProduct.setup( "Amount", 1, 0, 100000 ) );
-//		amountProduct = 1;
 		priceSingle = 10.0;
 		country = "DE";
 	}
@@ -39,7 +37,6 @@ public:
 
 	void draw()
 	{
-//		ofDrawBitmapStringHighlight( "Amount: " + ofToString( amountProduct ), 10, 10 );
 		ofDrawBitmapStringHighlight( "Tax: " + ofToString( taxPercentageCurrent ) + "%", 10, 30 );
 		ofDrawBitmapStringHighlight( "Price single: " + ofToString( priceSingle ) + "EURO", 10, 50 );
 		ofDrawBitmapStringHighlight( "Price Final: " + ofToString( getFinalPrice( country ) ), 10, 300, ofColor::red );
