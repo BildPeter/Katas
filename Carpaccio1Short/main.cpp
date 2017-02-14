@@ -8,7 +8,7 @@ class ofApp : public ofBaseApp{
 public:
     ofxIntSlider amountProduct;
     ofxPanel gui;
-	
+
 	double priceSingle = 0;
 	double priceFinal = 0.0;
 	double taxPercentageCurrent = 15;
@@ -16,7 +16,10 @@ public:
 
 	std::unordered_map< string, double > CountryToTaxPercentage =
 			{
-				{ "DE", 15.0 }
+				{ "DE", 15.0 },
+				{ "GR", 6.85 },
+				{ "GB", 8.99 },
+				{ "FI", 18.00 }
 			};
 
 
@@ -28,7 +31,7 @@ public:
         gui.setup( "Shop", "guiSettings.xml", 200, 50 );
 		gui.add( amountProduct.setup( "Amount", 1, 0, 100000 ) );
 		priceSingle = 10.0;
-		country = "DE";
+		country = "GB";
 	}
 
 	void update()
