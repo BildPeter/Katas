@@ -1,8 +1,14 @@
 #include "ofMain.h"
 
 
+
+
+
 class ofApp : public ofBaseApp{
 public:
+	int amountProduct = 0;
+
+
 	void setup()
 	{}
 
@@ -10,7 +16,9 @@ public:
 	{}
 
 	void draw()
-	{}
+	{
+		ofDrawBitmapStringHighlight( "Amount: " + ofToString( amountProduct ), 10, 10 );
+	}
 };
 
 
