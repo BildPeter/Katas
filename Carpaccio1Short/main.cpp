@@ -7,6 +7,8 @@
 class ofApp : public ofBaseApp{
 public:
 	int amountProduct = 0;
+	double priceFinal = 0.0;
+	double taxPercentageCurrent = 15;
 
 
 	void setup()
@@ -18,6 +20,8 @@ public:
 	void draw()
 	{
 		ofDrawBitmapStringHighlight( "Amount: " + ofToString( amountProduct ), 10, 10 );
+		ofDrawBitmapStringHighlight( "Tax: " + ofToString( taxPercentageCurrent ) + "%", 10, 30 );
+		ofDrawBitmapStringHighlight( "Price Final: " + ofToString( priceFinal ), 10, 300, ofColor::red );
 	}
 };
 
