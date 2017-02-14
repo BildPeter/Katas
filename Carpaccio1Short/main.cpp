@@ -12,12 +12,14 @@ public:
 	double taxPercentageCurrent = 15;
 
 
+	double getTaxFactor() const { return ( taxPercentageCurrent / 100 + 1 ); }
+
+	double getFinalPrice() const { return priceSingle * amountProduct * getTaxFactor(); }
+
 	void setup()
 	{
 		amountProduct = 1;
 		priceSingle = 10.0;
-
-		priceFinal = priceSingle * amountProduct * ( taxPercentageCurrent / 100 + 1 );
 	}
 
 	void update()
@@ -28,7 +30,7 @@ public:
 		ofDrawBitmapStringHighlight( "Amount: " + ofToString( amountProduct ), 10, 10 );
 		ofDrawBitmapStringHighlight( "Tax: " + ofToString( taxPercentageCurrent ) + "%", 10, 30 );
 		ofDrawBitmapStringHighlight( "Price single: " + ofToString( priceSingle ) + "EURO", 10, 50 );
-		ofDrawBitmapStringHighlight( "Price Final: " + ofToString( priceFinal ), 10, 300, ofColor::red );
+		ofDrawBitmapStringHighlight( "Price Final: " + ofToString( getFinalPrice() ), 10, 300, ofColor::red );
 	}
 };
 
