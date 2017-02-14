@@ -1,7 +1,5 @@
 #include "ofMain.h"
 #include "ofxGui.h"
-#include <unordered_map>
-
 
 
 class ofApp : public ofBaseApp{
@@ -18,15 +16,6 @@ public:
 				{ "GR", 6.85 },
 				{ "GB", 8.99 },
 				{ "FI", 18.00 }
-			};
-
-	std::unordered_map< int, double > amonutToDiscount =
-			{
-					{1000, 3.0 },
-					{5000, 5.0 },
-					{7000, 7.0 },
-					{10000, 10.0 },
-					{50000, 15.0 }
 			};
 
 	double getTaxFactor( string countryCode ) { return ( CountryToTaxPercentage.at( countryCode ) / 100 + 1 ); }
