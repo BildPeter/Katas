@@ -10,8 +10,6 @@ public:
     ofxPanel gui;
 
 	double priceSingle = 0;
-	double priceFinal = 0.0;
-	double taxPercentageCurrent = 15;
 	string country = "";
 
 	std::unordered_map< string, double > CountryToTaxPercentage =
@@ -22,6 +20,14 @@ public:
 				{ "FI", 18.00 }
 			};
 
+	std::unordered_map< int, double > amonutToDiscount =
+			{
+					{1000, 3.0 },
+					{5000, 5.0 },
+					{7000, 7.0 },
+					{10000, 10.0 },
+					{50000, 15.0 }
+			};
 
 	double getTaxFactor( string countryCode ) { return ( CountryToTaxPercentage.at( countryCode ) / 100 + 1 ); }
 	double getFinalPrice( string countryCode ) { return priceSingle * amountProduct * getTaxFactor( countryCode ); }
@@ -40,7 +46,7 @@ public:
 
 	void draw()
 	{
-		ofDrawBitmapStringHighlight( "Tax: " + ofToString( taxPercentageCurrent ) + "%", 10, 30 );
+		ofDrawBitmapStringHighlight( "Tax: " + ofToString( CountryToTaxPercentage.at( country ) ) + "%", 10, 30 );
 		ofDrawBitmapStringHighlight( "Price single: " + ofToString( priceSingle ) + "EURO", 10, 50 );
 		ofDrawBitmapStringHighlight( "Price Final: " + ofToString( getFinalPrice( country ) ), 10, 300, ofColor::red );
 
