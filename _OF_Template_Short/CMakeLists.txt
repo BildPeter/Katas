@@ -18,7 +18,7 @@ set( OF_DIRECTORY_BY_USER "../../of" )
 
 # --------------------- Source Files ---------------------
 set( ${APP_NAME}_SOURCE_FILES
-        src/main.cpp
+        main.cpp
  )
 
 
