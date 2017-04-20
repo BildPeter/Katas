@@ -2,6 +2,10 @@
 #include "OpAdd.h"
 #include "OpFactory.h"
 
+#include "ShapeFactory.h"
+#include "ShapeRect.h"
+#include "ShapeTri.h"
+
 
 int main()
 {
@@ -15,5 +19,14 @@ int main()
     
     std::cout << adder2->apply( first, second ) << std::endl;
     std::cout << multiplier->apply( first, second ) << std::endl;
+    
+    
+    // sampel 2    
+    ShapeFactory shapeFactory;
+    auto tri = shapeFactory.make<ShapeTri>  ( "myCoolTriangle", 20, 20 );
+    auto rect = shapeFactory.make<ShapeRect>( "myCoolRect", 20, 20, 1, 2, 3, 4);
+    
+    rect->draw();
+    
     return 0;
 }
