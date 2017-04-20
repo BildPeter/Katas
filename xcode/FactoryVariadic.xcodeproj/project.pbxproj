@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4DEA30971EA978700083509C /* ShapeWrong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeWrong.h; sourceTree = "<group>"; };
 		845A0A421EA9454300188F7D /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		845A0A431EA9454300188F7D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		845A0A441EA9454300188F7D /* OpAdd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpAdd.cpp; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 				845A0A4D1EA9454300188F7D /* ShapeLine.h */,
 				845A0A4E1EA9454300188F7D /* ShapeRect.h */,
 				845A0A4F1EA9454300188F7D /* ShapeTri.h */,
+				4DEA30971EA978700083509C /* ShapeWrong.h */,
 			);
 			name = FactoryVariadic;
 			path = ../../Katas/FactoryVariadic;
@@ -200,7 +202,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -242,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};

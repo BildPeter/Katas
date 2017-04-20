@@ -15,7 +15,7 @@ class ShapeBase{
 
 public:
     ShapeBase(){  cout << "Construct : " << name << endl; };
-    ~ShapeBase(){ cout << "Desruct   : " << name << endl; };
+    ~ShapeBase(){ cout << "Destruct   : " << name << endl; };
     
     virtual void draw() = 0;
     float x, y;

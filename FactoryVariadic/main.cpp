@@ -7,6 +7,7 @@
 #include "ShapeLine.h"
 #include "ShapeTri.h"
 #include "ShapeRect.h"
+#include "ShapeWrong.h"
 
 #include <vector>
 
@@ -34,6 +35,10 @@ int main()
     for( shared_ptr<ShapeBase> s : shs ){
         s->draw();
     }
+    
+    // static_assert test
+    // this should fail on compile time
+    //auto bad = shapeFactory.make<ShapeWrong>( "This is bad shape without base class", 20, 20);
     
     return 0;
 }
