@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84738E3E1EA936C700C1B6CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84738E321EA936C700C1B6CB /* main.cpp */; };
-		84738E3F1EA936C700C1B6CB /* OpAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84738E331EA936C700C1B6CB /* OpAdd.cpp */; };
-		84738E401EA936C700C1B6CB /* OpFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84738E361EA936C700C1B6CB /* OpFactory.cpp */; };
-		84738E411EA936C700C1B6CB /* OpMultiply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84738E381EA936C700C1B6CB /* OpMultiply.cpp */; };
+		845A0A501EA9454300188F7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845A0A431EA9454300188F7D /* main.cpp */; };
+		845A0A511EA9454300188F7D /* OpAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845A0A441EA9454300188F7D /* OpAdd.cpp */; };
+		845A0A521EA9454300188F7D /* OpFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845A0A471EA9454300188F7D /* OpFactory.cpp */; };
+		845A0A531EA9454300188F7D /* OpMultiply.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845A0A491EA9454300188F7D /* OpMultiply.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,18 +26,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		84738E321EA936C700C1B6CB /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../FactoryVariadic/main.cpp; sourceTree = "<group>"; };
-		84738E331EA936C700C1B6CB /* OpAdd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpAdd.cpp; path = ../../FactoryVariadic/OpAdd.cpp; sourceTree = "<group>"; };
-		84738E341EA936C700C1B6CB /* OpAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpAdd.h; path = ../../FactoryVariadic/OpAdd.h; sourceTree = "<group>"; };
-		84738E351EA936C700C1B6CB /* OperatorBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperatorBase.h; path = ../../FactoryVariadic/OperatorBase.h; sourceTree = "<group>"; };
-		84738E361EA936C700C1B6CB /* OpFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpFactory.cpp; path = ../../FactoryVariadic/OpFactory.cpp; sourceTree = "<group>"; };
-		84738E371EA936C700C1B6CB /* OpFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpFactory.h; path = ../../FactoryVariadic/OpFactory.h; sourceTree = "<group>"; };
-		84738E381EA936C700C1B6CB /* OpMultiply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpMultiply.cpp; path = ../../FactoryVariadic/OpMultiply.cpp; sourceTree = "<group>"; };
-		84738E391EA936C700C1B6CB /* OpMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpMultiply.h; path = ../../FactoryVariadic/OpMultiply.h; sourceTree = "<group>"; };
-		84738E3A1EA936C700C1B6CB /* ShapeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeBase.h; path = ../../FactoryVariadic/ShapeBase.h; sourceTree = "<group>"; };
-		84738E3B1EA936C700C1B6CB /* ShapeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeFactory.h; path = ../../FactoryVariadic/ShapeFactory.h; sourceTree = "<group>"; };
-		84738E3C1EA936C700C1B6CB /* ShapeRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeRect.h; path = ../../FactoryVariadic/ShapeRect.h; sourceTree = "<group>"; };
-		84738E3D1EA936C700C1B6CB /* ShapeTri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeTri.h; path = ../../FactoryVariadic/ShapeTri.h; sourceTree = "<group>"; };
+		845A0A421EA9454300188F7D /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		845A0A431EA9454300188F7D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		845A0A441EA9454300188F7D /* OpAdd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpAdd.cpp; sourceTree = "<group>"; };
+		845A0A451EA9454300188F7D /* OpAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpAdd.h; sourceTree = "<group>"; };
+		845A0A461EA9454300188F7D /* OperatorBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorBase.h; sourceTree = "<group>"; };
+		845A0A471EA9454300188F7D /* OpFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpFactory.cpp; sourceTree = "<group>"; };
+		845A0A481EA9454300188F7D /* OpFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpFactory.h; sourceTree = "<group>"; };
+		845A0A491EA9454300188F7D /* OpMultiply.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpMultiply.cpp; sourceTree = "<group>"; };
+		845A0A4A1EA9454300188F7D /* OpMultiply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpMultiply.h; sourceTree = "<group>"; };
+		845A0A4B1EA9454300188F7D /* ShapeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeBase.h; sourceTree = "<group>"; };
+		845A0A4C1EA9454300188F7D /* ShapeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
+		845A0A4D1EA9454300188F7D /* ShapeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeLine.h; sourceTree = "<group>"; };
+		845A0A4E1EA9454300188F7D /* ShapeRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeRect.h; sourceTree = "<group>"; };
+		845A0A4F1EA9454300188F7D /* ShapeTri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeTri.h; sourceTree = "<group>"; };
 		84B47FE21EA9235900FA3A01 /* FactoryVariadic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FactoryVariadic; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,18 +73,20 @@
 		84B47FEC1EA9237F00FA3A01 /* FactoryVariadic */ = {
 			isa = PBXGroup;
 			children = (
-				84738E321EA936C700C1B6CB /* main.cpp */,
-				84738E331EA936C700C1B6CB /* OpAdd.cpp */,
-				84738E341EA936C700C1B6CB /* OpAdd.h */,
-				84738E351EA936C700C1B6CB /* OperatorBase.h */,
-				84738E361EA936C700C1B6CB /* OpFactory.cpp */,
-				84738E371EA936C700C1B6CB /* OpFactory.h */,
-				84738E381EA936C700C1B6CB /* OpMultiply.cpp */,
-				84738E391EA936C700C1B6CB /* OpMultiply.h */,
-				84738E3A1EA936C700C1B6CB /* ShapeBase.h */,
-				84738E3B1EA936C700C1B6CB /* ShapeFactory.h */,
-				84738E3C1EA936C700C1B6CB /* ShapeRect.h */,
-				84738E3D1EA936C700C1B6CB /* ShapeTri.h */,
+				845A0A421EA9454300188F7D /* CMakeLists.txt */,
+				845A0A431EA9454300188F7D /* main.cpp */,
+				845A0A441EA9454300188F7D /* OpAdd.cpp */,
+				845A0A451EA9454300188F7D /* OpAdd.h */,
+				845A0A461EA9454300188F7D /* OperatorBase.h */,
+				845A0A471EA9454300188F7D /* OpFactory.cpp */,
+				845A0A481EA9454300188F7D /* OpFactory.h */,
+				845A0A491EA9454300188F7D /* OpMultiply.cpp */,
+				845A0A4A1EA9454300188F7D /* OpMultiply.h */,
+				845A0A4B1EA9454300188F7D /* ShapeBase.h */,
+				845A0A4C1EA9454300188F7D /* ShapeFactory.h */,
+				845A0A4D1EA9454300188F7D /* ShapeLine.h */,
+				845A0A4E1EA9454300188F7D /* ShapeRect.h */,
+				845A0A4F1EA9454300188F7D /* ShapeTri.h */,
 			);
 			name = FactoryVariadic;
 			path = ../../Katas/FactoryVariadic;
@@ -145,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84738E3F1EA936C700C1B6CB /* OpAdd.cpp in Sources */,
-				84738E3E1EA936C700C1B6CB /* main.cpp in Sources */,
-				84738E411EA936C700C1B6CB /* OpMultiply.cpp in Sources */,
-				84738E401EA936C700C1B6CB /* OpFactory.cpp in Sources */,
+				845A0A511EA9454300188F7D /* OpAdd.cpp in Sources */,
+				845A0A501EA9454300188F7D /* main.cpp in Sources */,
+				845A0A531EA9454300188F7D /* OpMultiply.cpp in Sources */,
+				845A0A521EA9454300188F7D /* OpFactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
