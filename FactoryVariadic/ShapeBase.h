@@ -9,21 +9,16 @@
 #ifndef ShapeBase_h
 #define ShapeBase_h
 
+using namespace std;
+
 class ShapeBase{
 
 public:
     ShapeBase(){  cout << "Construct : " << name << endl; };
     ~ShapeBase(){ cout << "Desruct   : " << name << endl; };
     
-    enum ShapeType{
-        SHAPE_NON = 0,
-        SHAPE_TRI,
-        SHAPE_RECT
-    };
-    
     virtual void draw() = 0;
     float x, y;
-    ShapeType type;
     string name;
 };
 

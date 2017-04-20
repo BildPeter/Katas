@@ -9,6 +9,8 @@
 #ifndef ShapeTri_h
 #define ShapeTri_h
 
+#include "ShapeBase.h"
+
 using namespace std;
 
 class ShapeTri : public ShapeBase{
@@ -21,7 +23,6 @@ public:
         name = _name;
         x = _x;
         y = _y;
-        type = ShapeType::SHAPE_TRI;
     }
         
     void draw(){ cout << "draw : " << name << endl;}

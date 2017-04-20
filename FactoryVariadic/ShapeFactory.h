@@ -9,21 +9,25 @@
 #ifndef ShapeFactory_h
 #define ShapeFactory_h
 
+#include "ShapeBase.h"
+
 using namespace std;
 
 class ShapeFactory{
     
 public:
 
-    template<typename ShapeT>
-    shared_ptr<ShapeT> make( ShapeT * shape ){
-        shared_ptr<ShapeT> result( shape );
-        return result;
-    };
+//    template<typename ShapeT>
+//    shared_ptr<ShapeT> make(){
+//        shared_ptr<ShapeT> shape( make_shared<ShapeT>());
+//        return shape;
+//    };
 
     template<typename ShapeT, typename... Args>
     shared_ptr<ShapeT> make( Args&&... args ){
-        shared_ptr<ShapeT> shape( new ShapeT(std::forward<Args>(args)... ) );
+        static_assert( std::is_base_of<ShapeBase, ShapeT>::value, "ShapeT must inherit from ShapeBase" );
+
+        shared_ptr<ShapeT> shape( make_shared<ShapeT>(std::forward<Args>(args)... ) );
         return shape;
     };
     

@@ -26,7 +26,6 @@ public:
         x = _x;
         y = _y;
         p1 = _p1; p2 = _p2; p3 = _p3; p4 = _p4;
-        type = ShapeType::SHAPE_RECT;
     }
     
     void draw(){ cout << "draw : " << name << endl;}
