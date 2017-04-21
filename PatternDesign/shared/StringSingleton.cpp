@@ -3,3 +3,8 @@
 //
 
 #include "StringSingleton.h"
+
+const std::string &StringSingleton::getString() const
+{
+    return mString;
+}

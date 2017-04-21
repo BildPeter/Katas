@@ -6,9 +6,22 @@
 #define PATTERNDESIGN_SIGNLETONBASE_H
 
 
+#include <string>
+
 class StringSingleton
 {
+public:
+    const std::string &getString() const;
 
+
+
+    // methods
+private:
+
+    // members
+private:
+
+    std::string mString;
 };
 
 
