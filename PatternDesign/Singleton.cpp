@@ -1,9 +1,9 @@
 #include <iostream>
-#include "shared/SingletonBase.h"
+#include "shared/StringSingleton.h"
 
 int main()
 {
-    SingletonBase single;
+    StringSingleton single;
 
     std::cout << "Hello, World!" << std::endl;
     return 0;

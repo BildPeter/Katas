@@ -6,7 +6,7 @@
 #define PATTERNDESIGN_SIGNLETONBASE_H
 
 
-class SingletonBase
+class StringSingleton
 {
 
 };
