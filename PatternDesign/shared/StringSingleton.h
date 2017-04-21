@@ -11,9 +11,16 @@
 class StringSingleton
 {
 public:
-    std::string  getString() const;
-    void         setString( const std::string &mString );
+    std::string getString() const
+    {
+        return mString;
+    }
 
+    void setString( const std::string &mString )
+    {
+        StringSingleton::mString = mString;
+    }
+    
 
     // methods
 private:
