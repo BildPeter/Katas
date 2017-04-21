@@ -4,7 +4,12 @@
 
 #include "StringSingleton.h"
 
-const std::string &StringSingleton::getString() const
+std::string StringSingleton::getString() const
 {
     return mString;
+}
+
+void StringSingleton::setString( const std::string &mString )
+{
+    StringSingleton::mString = mString;
 }

@@ -11,8 +11,8 @@
 class StringSingleton
 {
 public:
-    const std::string &getString() const;
-
+    std::string  getString() const;
+    void         setString( const std::string &mString );
 
 
     // methods
