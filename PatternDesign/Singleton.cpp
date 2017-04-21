@@ -3,8 +3,9 @@
 
 int main()
 {
-    StringSingleton single;
+    std::string text = "Bla";
+    StringSingleton::Instance().setString( text );
 
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << StringSingleton::Instance().getString() << std::endl;
     return 0;
 }
