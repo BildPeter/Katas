@@ -15,4 +15,6 @@ std::shared_ptr< OperatorBase > OpFactory::get( const std::string name )
     {
         return std::make_shared< OpMultiply >();
     }
+    
+    return nullptr;
 }
