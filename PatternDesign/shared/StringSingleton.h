@@ -20,14 +20,21 @@ public:
     {
         StringSingleton::mString = mString;
     }
-    
 
-    // methods
+    // create one instance
+    static StringSingleton& Instance()
+    {
+        static StringSingleton *instance = new StringSingleton;
+        return *instance; //return adress
+    }
+
 private:
+    StringSingleton() {}    //default const only for members or friends
+    StringSingleton( const StringSingleton &old); // no copy-cTor
+    const StringSingleton &operator=( const StringSingleton &old ); // no assignment OP
 
-    // members
-private:
 
+private:     // members
     std::string mString;
 };
 
