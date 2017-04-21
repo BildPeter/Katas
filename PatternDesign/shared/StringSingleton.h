@@ -32,7 +32,7 @@ private:
     StringSingleton() {}    //default const only for members or friends
     StringSingleton( const StringSingleton &old); // no copy-cTor
     const StringSingleton &operator=( const StringSingleton &old ); // no assignment OP
-
+    ~StringSingleton() {}
 
 private:     // members
     std::string mString;
