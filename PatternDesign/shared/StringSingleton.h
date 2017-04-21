@@ -21,10 +21,9 @@ public:
         StringSingleton::mString = mString;
     }
 
-    // create one instance
     static StringSingleton& Instance()
     {
-        static StringSingleton *instance = new StringSingleton;
+        static StringSingleton *instance = new StringSingleton; // TODO Why does this only run once? Static?
         return *instance; //return adress
     }
 
