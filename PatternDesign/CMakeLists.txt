@@ -4,7 +4,14 @@ project(PatternDesign)
 set(CMAKE_CXX_STANDARD 14)
 
 # --- Pattern excecutable files
-set(SOURCE_FILES Singleton.cpp shared/StringSingleton.h shared/StringSingleton2.h)
+set(SOURCE_FILES
+        PrototypeMain.cpp
+#        Singleton.cpp
+        shared/StringSingleton.h
+        shared/StringSingleton2.h
+        shared/StringSingleton3.h
+
+        shared/RecordPrototype.h)
 
 
 add_executable(PatternDesign ${SOURCE_FILES})
