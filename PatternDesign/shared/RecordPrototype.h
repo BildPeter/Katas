@@ -9,30 +9,30 @@
 #include <iostream>
 #include <unordered_map>
 
-class Record
+class PrinterBase
 {
 public:
-    virtual ~Record() {}
+    virtual ~PrinterBase() {}
     virtual void print() = 0;
-    virtual std::unique_ptr<Record> clone() = 0;
+    virtual std::unique_ptr<PrinterBase> clone() = 0;
 };
 
 
-class CarRecord : public Record
+class CarInfoPrinter : public PrinterBase
 {
 public:
-    CarRecord( const std::string &carName_, int carID_ ) : carName_( carName_ ), carID_( carID_ )
+    CarInfoPrinter( const std::string &carName_, int carID_ ) : carName_( carName_ ), carID_( carID_ )
     {
     }
 
     void print() override
     {
-        std::cout << "Car\n" << carID_ << " : " << carName_ << std::endl;
+        std::cout << "Car: " << carID_ << " | " << carName_ << std::endl;
     }
 
-    std::unique_ptr< Record > clone() override
+    std::unique_ptr< PrinterBase > clone() override
     {
-        return std::make_unique< CarRecord >(*this);
+        return std::make_unique< CarInfoPrinter >(*this);
     }
 
 
@@ -43,21 +43,21 @@ private:
 };
 
 
-class PersonRecord : public Record
+class PersonInfoPrinter : public PrinterBase
 {
 public:
-    PersonRecord( const std::string &personName_, int personID_ ) : personName_( personName_ ),
+    PersonInfoPrinter( const std::string &personName_, int personID_ ) : personName_( personName_ ),
                                                                     personID_( personID_ )
     {}
 
     void print() override
     {
-        std::cout << "Person\n" << personID_ << " : " << personName_ << std::endl;
+        std::cout << "Person: " << personID_ << " | " << personName_ << std::endl;
     }
 
-    std::unique_ptr< Record > clone() override
+    std::unique_ptr< PrinterBase > clone() override
     {
-        return std::make_unique< PersonRecord >(*this);
+        return std::make_unique< PersonInfoPrinter >(*this);
     }
 
 private:
@@ -65,28 +65,28 @@ private:
     int         personID_;
 };
 
-enum RecordType
+enum PrinterType
 {
     CAR,
     PERSON
 };
 
-class RecordFactory
+class PrinterFactory
 {
 public:
-    RecordFactory()
+    PrinterFactory()
     {
-        records_[ RecordType::CAR ] = std::make_unique< CarRecord >( "VW", 77);
-        records_[ RecordType::PERSON ] = std::make_unique< PersonRecord >( "Karl", 0 );
+        printers_[ PrinterType::CAR ] = std::make_unique< CarInfoPrinter >( "VW", 77);
+        printers_[ PrinterType::PERSON ] = std::make_unique< PersonInfoPrinter >( "Karl", 0 );
     }
 
-    std::unique_ptr< Record >   createRecord( RecordType type )
+    std::unique_ptr< PrinterBase >   createPrinter( PrinterType type )
     {
-        return records_.at( type )->clone();
+        return printers_.at( type )->clone();
     }
 
 private:
-    std::unordered_map< RecordType, std::unique_ptr< Record >, std::hash< int > >    records_;
+    std::unordered_map< PrinterType, std::unique_ptr< PrinterBase >, std::hash< int > >    printers_;
 };
 
 

@@ -5,12 +5,11 @@
 
 int main()
 {
+    PrinterFactory   factory;
 
-    RecordFactory   factory;
+    auto carInfo = factory.createPrinter( PrinterType::CAR );
+    auto personInfo = factory.createPrinter( PrinterType::PERSON );
 
-    auto car = factory.createRecord( RecordType::CAR );
-    auto person = factory.createRecord( RecordType::PERSON );
-
-    car->print();
-    person->print();
+    carInfo->print();
+    personInfo->print();
 }
