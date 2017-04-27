@@ -11,7 +11,7 @@ set(SOURCE_FILES
         shared/StringSingleton2.h
         shared/StringSingleton3.h
 
-        shared/RecordPrototype.h)
+        shared/PrinterPrototype.h)
 
 
 add_executable(PatternDesign ${SOURCE_FILES})

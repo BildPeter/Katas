@@ -1,7 +1,7 @@
 //
 // Created by Peter A. Kolski on 27.04.17.
 //
-#include "shared/RecordPrototype.h"
+#include "shared/PrinterPrototype.h"
 
 int main()
 {
