@@ -6,11 +6,10 @@ set(CMAKE_CXX_STANDARD 14)
 # --- Pattern excecutable files
 set(SOURCE_FILES
         PrototypeMain.cpp
-#        Singleton.cpp
+#        SingletonMain.cpp
         shared/StringSingleton.h
         shared/StringSingleton2.h
         shared/StringSingleton3.h
-
         shared/PrinterPrototype.h)
 
 
