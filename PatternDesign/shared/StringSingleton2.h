@@ -8,7 +8,7 @@
 #include <string>
 
 /*
- * No static member variable!!!!
+ *
  * */
 
 class StringSingleton2
@@ -26,7 +26,8 @@ public:
 
     static StringSingleton2 & Instance()
     {
-        static StringSingleton2 *  instance_ = new StringSingleton2;
+//        static StringSingleton2 *  instance_ = new StringSingleton2;
+        static std::unique_ptr<StringSingleton2>  instance_( new StringSingleton2() );
         return *instance_;
     }
 
