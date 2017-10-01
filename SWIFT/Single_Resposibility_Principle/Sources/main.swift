@@ -31,7 +31,7 @@ class Journal
 
 func main()
 {
-    let j = Journal()
+    let j = Journal1()
     let _ = j.addEntry("I love my iPad")        //TODO What does that mean?
     let bug = j.addEntry("Noone is in Lacuna")
 
