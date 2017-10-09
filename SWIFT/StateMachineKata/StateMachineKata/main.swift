@@ -31,38 +31,48 @@ enum Trigger
 // StateCurrent -> ( Trigger, State )
 //: [ State, [(Trigger, State) ] ]
 let rules = [
-    State.sittig: [ ( Trigger.beat, State.sittig ),
-                    ( Trigger.suffer, State.sittig ),
-                    ( Trigger.eat, State.standing ) ],
-    State.standing: [ ( Trigger.beat, State.sittig ),
-                      ( Trigger.suffer, State.sittig ),
-                      ( Trigger.eat, State.flying ) ],
-    State.flying: [ ( Trigger.beat, State.sittig ),
-                    ( Trigger.suffer, State.standing ),
-                    Trigger.eat, State.flying ]
+    State.sittig: [ Trigger.beat: State.sittig,
+                    Trigger.suffer: State.sittig,
+                    Trigger.eat: State.standing ],
+    State.standing: [ Trigger.beat: State.sittig,
+                      Trigger.suffer: State.sittig,
+                      Trigger.eat: State.flying ],
+    State.flying: [ Trigger.beat: State.sittig,
+                    Trigger.suffer: State.standing,
+                    Trigger.eat: State.flying ]
 ]
 
 class StateMachine
 {
     private var mState : State = State.sittig
-    private let mRules = rules
+    private let mRules         = rules
 
-    func changeState( _trigger : Trigger ) -> State
+    func changeState( trigger : Trigger )
     {
-
-        return mState
+//        mState = rules[ mState ][trigger]
+        mState = rules[ mState ]![trigger]!  //TODO why do they become optionals?
     }
 
     func printState()
     {
-        print(mState)
+        print( "State is: \( mState )" )
     }
 }
 
 func main()
 {
-    var mState : State = State.sittig
-    print("State is: \(mState)" )
+    let machine = StateMachine()
+    machine.printState()
+    machine.changeState( trigger: Trigger.eat )
+    machine.printState()
+    machine.changeState( trigger: Trigger.eat )
+    machine.printState()
+    machine.changeState( trigger: Trigger.eat )
+    machine.printState()
+    machine.changeState( trigger: Trigger.beat )
+    machine.printState()
+    machine.changeState( trigger: Trigger.beat )
+    machine.printState()
 }
 
 main()
