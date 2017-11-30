@@ -2,14 +2,14 @@
 // Created by Peter A. Kolski on 27.04.17.
 //
 #include "shared/PrinterPrototype.h"
+#include "shared/PrinterPrototype2.h"
 
 int main()
 {
     PrinterFactory   factory;
+    auto infoPrinter = factory.createPrinter( PrinterType::CAR );
 
-    auto carInfo = factory.createPrinter( PrinterType::CAR );
-    auto personInfo = factory.createPrinter( PrinterType::PERSON );
-
-    carInfo->print();
-    personInfo->print();
+    infoPrinter->print();
+    infoPrinter = factory.createPrinter( PrinterType::PERSON );
+    infoPrinter->print();
 }
