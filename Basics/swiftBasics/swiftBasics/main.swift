@@ -8,25 +8,11 @@
 
 import Foundation
 
-class Printer
-{
-    func printHallo()
-    {
-        print( "Hallo Peter" )
-    }
-}
-
-
-let p = Printer()
-
-p.printHallo()
-
-
 // #################################################################
 // ##################### Datatypes #################################
 // #################################################################
 
-// ---------------------- ARRAYS -----------------------------------
+// MARK: ------------ ARRAYS -----------------------------------
 var someArray = [ Int ]( repeating: 7, count: 3 )
 var someVar   = someArray[ 1 ]
 print( "Array value: \( someVar )" )
@@ -34,7 +20,7 @@ print( "Array value: \( someVar )" )
 someArray.append( 20 )
 someArray += [ 40 ]
 
-// ---------------------- DICTIONARIES -----------------------------
+// MARK: ---------- DICTIONARIES -----------------------------
 
 var someDict : [ Float : String ] = [ 1.0: "One", 2.0: "Two", 3.0: "Three" ]
 var someVar1                      = someDict[ 2.0 ]
@@ -57,8 +43,24 @@ var perhapsInt : Int?
 
 
 
-// -------------------------- DECISION ------------------------------
+// MARK: ------------ DECISION ------------------------------
 var doIt   = true
 let choice = doIt ? "Ja" : "Nein"
 print( choice )
 
+
+
+// #################################################################
+// ########################### OOP #################################
+// #################################################################
+
+class Printer
+{
+    func printHallo()
+    {
+        print( "Hallo Peter" )
+    }
+}
+
+let p = Printer()
+p.printHallo()
