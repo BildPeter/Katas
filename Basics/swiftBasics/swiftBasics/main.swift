@@ -11,6 +11,7 @@ import Foundation
 // #################################################################
 // ##################### Datatypes #################################
 // #################################################################
+// https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html
 
 // MARK: - ARRAY
 
@@ -28,11 +29,15 @@ someArray += [ 40 ]
 // MARK: - SET
 
 var mSet = Set<Int>()
+var setFromArray : Set = [ "Geil", "Scheisse", "Quark" ]
 mSet.insert( 4 )
 mSet = []
-
-var setFromArray : Set = [ "Geil", "Scheisse", "Quark" ]
 setFromArray.contains( "Geil" )
+setFromArray.union()
+setFromArray.intersection()
+setFromArray.symmetricDifference()
+setFromArray.subtracting()
+
 
 // MARK: - DICTIONARY
 
