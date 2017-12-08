@@ -33,15 +33,15 @@ var setFromArray : Set = [ "Geil", "Scheisse", "Quark" ]
 mSet.insert( 4 )
 mSet = []
 setFromArray.contains( "Geil" )
-setFromArray.union()
-setFromArray.intersection()
-setFromArray.symmetricDifference()
-setFromArray.subtracting()
+//setFromArray.union()
+//setFromArray.intersection()
+//setFromArray.symmetricDifference()
+//setFromArray.subtracting()
 
 
 // MARK: - DICTIONARY
 
-var emptyDict = [ Sting: Int ]()
+var emptyDict = [ String: Int ]()
 emptyDict[ "eins" ] = 1
 emptyDict = [:]
 
@@ -54,6 +54,13 @@ for ( key, value ) in someDict
 
 //Enum
 
+enum Schrott: String
+{
+    case microsoft
+    case fiat
+}
+
+print( Schrott.microsoft.rawValue )
 
 //Optionals
 //Without value
@@ -74,10 +81,6 @@ class Printer
 
 let p = Printer()
 p.printHallo()
-
-
-let exp = Experiment()
-exp.show()
 
 
 // MARK: - DECISION
