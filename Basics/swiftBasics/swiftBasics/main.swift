@@ -12,34 +12,36 @@ import Foundation
 // ##################### Datatypes #################################
 // #################################################################
 
-// MARK: ------------ ARRAYS -----------------------------------
+// MARK: - ARRAY
+
 var emptyIntArray = [ Int ]()
 emptyIntArray.append( 20 )
-emptyIntArray.insert( 7, at: 0 )
-emptyIntArray.remove( at: 0 )
 emptyIntArray = [] // reset but keeps type Int
 emptyIntArray.isEmpty
 emptyIntArray.count
-
+emptyIntArray.insert( 7, at: 0 )
+emptyIntArray.remove( at: 0 )
 
 var someArray = Array( repeating: 7, count: 3 )
-var someVar   = someArray[ 1 ]
-print( "Array value: \( someVar )" )
 someArray += [ 40 ]
 
-// MARK: ---------- DICTIONARIES -----------------------------
+// MARK: - SET
+
+var mSet = Set<Int>()
+mSet.insert( 4 )
+mSet = []
+
+var setFromArray : Set = [ "Geil", "Scheisse", "Quark" ]
+setFromArray.contains( "Geil" )
+
+// MARK: - DICTIONARY
 
 var someDict : [ Float : String ] = [ 1.0: "One", 2.0: "Two", 3.0: "Three" ]
-var someVar1                      = someDict[ 2.0 ]
-var someVar2                      = someDict[ 1 ]
-print( "2.0 = \( someVar1 ) || 1 = \( someVar2 )" )
 
 for ( key, value ) in someDict
 {
     print( "Dictionary key \( key ) - Dictionary value \( value )" )
 }
-someDict.count
-someDict.isEmpty
 
 //Enum
 
@@ -49,7 +51,7 @@ someDict.isEmpty
 var perhapsInt : Int?
 
 
-// MARK: ------------ DECISION ------------------------------
+// MARK: - DECISION
 var doIt   = true
 let choice = doIt ? "Ja" : "Nein"
 print( choice )
@@ -69,3 +71,7 @@ class Printer
 
 let p = Printer()
 p.printHallo()
+
+
+let exp = Experiment()
+exp.show()
