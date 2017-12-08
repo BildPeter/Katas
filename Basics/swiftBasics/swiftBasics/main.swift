@@ -56,12 +56,6 @@ for ( key, value ) in someDict
 var perhapsInt : Int?
 
 
-// MARK: - DECISION
-var doIt   = true
-let choice = doIt ? "Ja" : "Nein"
-print( choice )
-
-
 // #################################################################
 // ########################### OOP #################################
 // #################################################################
@@ -80,3 +74,9 @@ p.printHallo()
 
 let exp = Experiment()
 exp.show()
+
+
+// MARK: - DECISION
+var doIt   = true
+let choice = doIt ? "Ja" : "Nein"
+print( choice )
