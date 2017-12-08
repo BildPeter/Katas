@@ -28,7 +28,7 @@ someArray += [ 40 ]
 
 // MARK: - SET
 
-var mSet = Set<Int>()
+var mSet               = Set<Int>()
 var setFromArray : Set = [ "Geil", "Scheisse", "Quark" ]
 mSet.insert( 4 )
 mSet = []
@@ -40,6 +40,10 @@ setFromArray.subtracting()
 
 
 // MARK: - DICTIONARY
+
+var emptyDict = [ Sting: Int ]()
+emptyDict[ "eins" ] = 1
+emptyDict = [:]
 
 var someDict : [ Float : String ] = [ 1.0: "One", 2.0: "Two", 3.0: "Three" ]
 
