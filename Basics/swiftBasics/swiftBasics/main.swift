@@ -52,7 +52,14 @@ for ( key, value ) in someDict
     print( "Dictionary key \( key ) - Dictionary value \( value )" )
 }
 
-//Enum
+// MARK: - Tuple
+// Like a Struct without methods
+let simpleTuple = ( "Hey", 5 )
+typealias param = ( text : String, nr : Int )
+var tupleArray = [ param ]()
+print( simpleTuple.0 )
+
+// MARK: - Enum
 
 enum Schrott: String
 {
