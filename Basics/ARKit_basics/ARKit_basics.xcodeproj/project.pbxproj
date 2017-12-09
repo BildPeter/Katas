@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0BE1A04ABB211798A9F63AF /* DeleteMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BE1043683DFF152C47E78E /* DeleteMe.swift */; };
 		DB9861961FDC7B34005FC9A0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9861951FDC7B34005FC9A0 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D0BE1043683DFF152C47E78E /* DeleteMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMe.swift; sourceTree = "<group>"; };
 		DB9861921FDC7B34005FC9A0 /* ARKit_basics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ARKit_basics; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9861951FDC7B34005FC9A0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				DB9861951FDC7B34005FC9A0 /* main.swift */,
+				D0BE1043683DFF152C47E78E /* DeleteMe.swift */,
 			);
 			path = ARKit_basics;
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB9861961FDC7B34005FC9A0 /* main.swift in Sources */,
+				D0BE1A04ABB211798A9F63AF /* DeleteMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
