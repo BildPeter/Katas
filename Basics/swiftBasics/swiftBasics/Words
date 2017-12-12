@@ -1,0 +1,31 @@
+
+    Swift WORDS
+
+    debug view scene node create scale position action move shift child marker object error object anchor processing
+    false true self private func frame override import guard let swift extension import os.log duration
+    if let in center get result feature point transform return for in class public typealias setup
+    --- In Tippakademie till here
+
+    DispatchQueue.main.async
+
+
+    .append()
+
+
+
+    ---- AR Kit / ScenKit
+    ViewController
+    SCNNode sceneView.scene.rootNode.addChildNode( node )
+    SCNMaterial() .geometry?.firstMaterial?.transparency
+    SCNLight() .ambient .type .intensity .light
+    SCNAction() .runAction( fade )  SCNAction.fadeIn( duration: 0 )
+    sceneView.showsStatistics = true
+    sceneView.autoenablesDefaultLighting = true
+    let configuration = ARWorldTrackingConfiguration()
+    configuration.isLightEstimationEnabled = true
+    sceneView.session.run( configuration )
+    SCNVector3( 0, 0, 0 )
+    SCNLight()
+    SCNMatrix
+    PBR sceneView.scene.lightingEnvironment.contents = env
+    ARSCNViewDelegate ARSessionDelegate ARSCNView
