@@ -13,6 +13,18 @@ import Foundation
 // #################################################################
 // https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html
 
+// OVERVIEW
+/*
+Array
+Dictionary
+set
+tuple
+enum
+optionals
+closures
+*/
+
+
 // MARK: - ARRAY
 
 var emptyIntArray = [ Int ]()
@@ -72,6 +84,24 @@ print( Schrott.microsoft.rawValue )
 //Optionals
 //Without value
 var perhapsInt : Int?
+
+// --- closures
+{ ( n1: Int, n2: Int ) -> Int in
+    return n1 + n2
+}
+
+{( n1, n2) -> Int in
+    return n1 + n2
+}
+
+{( n1, n2) in n1 + n2}
+
+{ $0 + $1 } // First input multiplied by second input parameter
+
+let array = [1, 2, 6 ]
+array.map( )
+array.reduce()
+array.filter()
 
 
 // #################################################################

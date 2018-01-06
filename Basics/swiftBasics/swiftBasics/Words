@@ -5,6 +5,7 @@
     false true self private func frame override import guard let swift extension import os.log duration
     if let in center get result feature point transform return for in class public typealias setup
     --- In Tippakademie till here
+    Bool
 
     DispatchQueue.main.async
 
@@ -15,6 +16,7 @@
 
     ---- AR Kit / ScenKit
     ViewController
+    sceneView.debugOptions = [ ARSCNDebugOptions.showFeaturePoints ]
     SCNNode sceneView.scene.rootNode.addChildNode( node )
     SCNMaterial() .geometry?.firstMaterial?.transparency
     SCNLight() .ambient .type .intensity .light
@@ -27,5 +29,6 @@
     SCNVector3( 0, 0, 0 )
     SCNLight()
     SCNMatrix
+    SCNNode( geometry: SCNSphere( radius: 0.02 ) )
     PBR sceneView.scene.lightingEnvironment.contents = env
     ARSCNViewDelegate ARSessionDelegate ARSCNView
