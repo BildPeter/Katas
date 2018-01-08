@@ -98,6 +98,12 @@ var perhapsInt : Int?
 
 { $0 + $1 } // First input multiplied by second input parameter
 
+myFunc( in: 2 ) { // trailing closure
+    ( out ) in
+    print("geil")
+}
+
+// --- Functional
 let array = [1, 2, 6 ]
 array.map( )
 array.reduce()
