@@ -130,3 +130,12 @@ p.printHallo()
 var doIt   = true
 let choice = doIt ? "Ja" : "Nein"
 print( choice )
+
+// MARK: --- Do Catch
+// If method() is marked with 'throws'
+do {
+    try method()
+} catch
+{
+
+}
