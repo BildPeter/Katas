@@ -25,7 +25,10 @@ class StrategyOne : MyStrategy
     func end() -> Int {}
 }
 
-class Processor
+
+// DYNAMIC - At runtime
+
+class ProcessorDynamic
 {
     private var strategy_:MyStrategy
 
@@ -43,4 +46,27 @@ class Processor
         strategy_.start()
         strategy_.end()
     }
+}
+
+
+// STATIC - At compile time
+// Usually faster
+
+class ProcessorStatic<MS>
+        where MS:MyStrategy
+{
+    private let strategy_ = MS()
+
+    func doAllShit()
+    {
+        strategy_.start()
+        strategy_.end()
+    }
+}
+
+
+func main()
+{
+    let pro = ProcessorStatic<StrategyOne>()
+    pro.doAllShit()
 }
