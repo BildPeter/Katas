@@ -20,11 +20,29 @@ sceneView.autoenablesDefaultLighting = true
 
 let conf = ARWorldTrackingConfiguration()
 conf.planeDetection = .horizontal
+conf.planeDetection = .vertical
 conf.isLightEstimationEnabled = true
-sceneView.session.run( conf )
+sceneView.session.run( conf, options: [ .resetTracking, .removeExistingAnchors ] )
+sceneView.debugOptions = [ ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin ]
+
 
 ARAnchor
 ARFrame
 
-let image  = ARReferenceImage()
+let image = ARReferenceImage()
 ARImageAnchor
+conf.detectionImages = referenceImages
+
+
+// SCNKit
+var imageHighlightAction : SCNAction
+{
+    return .sequence( [
+                          .wait( duration: 0.25 ),
+                          .fadeOpacity( to: 0.85, duration: 0.25 ),
+                          .fadeOpacity( to: 0.15, duration: 0.25 ),
+                          .fadeOpacity( to: 0.85, duration: 0.25 ),
+                          .fadeOut( duration: 0.5 ),
+                          .removeFromParentNode()
+                      ] )
+}
