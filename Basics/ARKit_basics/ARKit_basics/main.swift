@@ -25,3 +25,6 @@ sceneView.session.run( conf )
 
 ARAnchor
 ARFrame
+
+let image  = ARReferenceImage()
+ARImageAnchor
