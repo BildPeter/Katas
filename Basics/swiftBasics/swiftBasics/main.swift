@@ -85,6 +85,11 @@ print( Schrott.microsoft.rawValue )
 //Without value
 var perhapsInt : Int?
 
+
+// #################################################################
+// ########################### FUNCTIONAL ##########################
+// #################################################################
+
 // --- closures
 { ( n1: Int, n2: Int ) -> Int in
     return n1 + n2
@@ -105,9 +110,12 @@ myFunc( in: 2 ) { // trailing closure
 
 // --- Functional
 let array = [1, 2, 6 ]
-array.map( )
+array.map()
 array.reduce()
 array.filter()
+array.sorted()
+array.forEach()
+array.flatMap()
 
 
 // #################################################################
