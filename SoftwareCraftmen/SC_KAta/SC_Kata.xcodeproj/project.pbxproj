@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1D33132200DA9D00C5133B /* RomanCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D33122200DA9D00C5133B /* RomanCal.swift */; };
 		DBAAC05822006B0500170C8F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAC05722006B0500170C8F /* main.swift */; };
 		DBAAC06522006B6500170C8F /* TestMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAAC06422006B6500170C8F /* TestMe.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB1D33122200DA9D00C5133B /* RomanCal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RomanCal.swift; path = SC_KAta/RomanCal.swift; sourceTree = SOURCE_ROOT; };
 		DBAAC05422006B0500170C8F /* SC_Kata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SC_Kata; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAAC05722006B0500170C8F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DBAAC06222006B6500170C8F /* TestMe.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMe.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DBAAC05722006B0500170C8F /* main.swift */,
+				DB1D33122200DA9D00C5133B /* RomanCal.swift */,
 			);
 			path = SC_Kata;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1D33132200DA9D00C5133B /* RomanCal.swift in Sources */,
 				DBAAC05822006B0500170C8F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

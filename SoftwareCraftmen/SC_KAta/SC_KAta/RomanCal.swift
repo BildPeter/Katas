@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  RomanCal.swift
 //  SC_Kata
 //
 //  Created by Peter A. Kolski on 29.01.19.
@@ -7,8 +7,4 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-
-
 

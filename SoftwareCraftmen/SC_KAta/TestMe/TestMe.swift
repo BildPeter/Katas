@@ -8,26 +8,55 @@
 
 import XCTest
 
-class TestMe: XCTestCase {
 
+class RomanCalculator {
+    
+    let romanToArabic = [ "I": 1, "V": 5 ]
+    
+    func convert( from roman:String ) -> Int
+    {
+        let stringArray = Array( roman )
+        
+        var value : Int = 0
+        for i in 0...roman.count - 1
+        {
+            value += romanToArabic[ String( stringArray[i] ), default : 0 ]
+        }
+        
+        return value
+    }
+}
+
+
+class TestMe: XCTestCase {
+    var sut : RomanCalculator!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = RomanCalculator()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_Roman_To_Arabic_One()
+    {
+        XCTAssertEqual( 1, sut.convert(from: "I") )
+    }
+    
+    func test_Roman_To_Arabic_Five()
+    {
+        XCTAssertEqual( 5, sut.convert(from: "V") )
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_Two()
+    {
+        XCTAssertEqual( 2, sut.convert(from: "II") )
+    }
+    
+    func test_Four()
+    {
+        XCTAssertEqual(4, sut.convert(from: "IV"))
     }
 
 }
