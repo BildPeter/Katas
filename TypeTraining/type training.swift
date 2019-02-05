@@ -1,18 +1,18 @@
 
-// --- adding
-airports["LHR"] = "London"
-// --- remove
-airports["LHR"] = nil
+var dict = [ String : String ]()
 
-for key in dict.keys
-for value in dict.values
+// --- dictionary
+dict["LHR"] = "London" // --- adding
+dict["LHR"] = nil // --- remove
+for key in dict.keys {}
+for value in dict.values {}
 
 // --- Array of keys/values
-let keys = [Int]dict.keys
-let values = [String]dict.values
+let _ = Array( dict.keys )
+let _ = Array( dict.values )
 
 // --- Closures
-delayCounterRect = delayCounterRect.mapValues { $0 - 1 }
-delayCounterRect = delayCounterRect.filter { $0.value > 0 }
+dict = dict.mapValues { $0 + ".jpg" } // --- change the values of a dictionary
+dict = dict.filter { $0 != "Three" } // --- Filter elements
 
 
